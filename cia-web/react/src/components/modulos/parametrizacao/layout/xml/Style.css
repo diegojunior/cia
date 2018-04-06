@@ -1,0 +1,70 @@
+.navigationAlign {
+   text-align: right;
+   height: 40px;
+}
+
+.pickListStyle {
+    overflow-y: 'scroll';
+    height: 225px;
+}
+
+.sessaoBotoes {
+	height: 50px;
+}
+
+.limitsAddRemoveMultiplesInputs {
+    width: 100% !important;
+    height: 225px;
+}
+
+.header-table {
+	width: 100% !important;
+}
+
+#chaveHeader {
+    width: 5% !important;
+}
+
+#conciliavelHeader {
+    width: 5% !important;
+}
+
+#informativoHeader {
+    width: 5% !important;
+}
+
+#campoCargaHeader {
+    width: 28.33% !important;
+}
+
+#campoImportacaoHeader {
+    width: 28.33% !important;
+}
+
+#campoEquivalenteHeader {
+    width: 28.33% !important;
+}
+
+#chaveBody {
+    width: 5% !important;
+}
+
+#conciliavelBody {
+    width: 5% !important;
+}
+
+#informativoBody {
+    width: 5% !important;
+}
+
+#campoCargaBody {
+    width: 28.33% !important;
+}
+
+#campoImportacaoBody {
+    width: 28.33% !important;
+}
+
+#campoEquivalenteBody {
+    width: 27% !important;
+}

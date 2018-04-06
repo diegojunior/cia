@@ -1,0 +1,10 @@
+.navigationAlign {
+   text-align: right;
+   height: 40px;
+}
+
+.limitsAddRemoveMultiplesInputs {
+	overflow-y: scroll;
+	height: 225px;
+    width: 41% !important;
+}

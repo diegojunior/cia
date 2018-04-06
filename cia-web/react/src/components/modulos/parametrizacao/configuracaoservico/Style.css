@@ -1,0 +1,18 @@
+.navigationAlign {
+   text-align: right;
+   height: 40px;
+}
+
+.pickListStyle {
+    overflow-y: 'scroll';
+    height: 225px;
+}
+
+.limitsAddRemoveMultiplesInputs {
+    width: 41% !important;
+    height: 225px;
+}
+
+.header-table {
+	width: 41% !important;
+}

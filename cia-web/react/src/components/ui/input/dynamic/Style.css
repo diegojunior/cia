@@ -1,0 +1,13 @@
+.limitAddRemoveMultiplesInputs {
+	height: 225px;
+	width: 100%;
+}
+
+.formRequired .control-label:after {
+	content:" * ";
+    color:red;
+}
+
+.default-height {
+	height: 225px;
+}

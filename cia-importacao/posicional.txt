@@ -1,0 +1,5 @@
+032_HOMOLOGA_CIA10PETR40         2016-06-20     0              0              
+032_HOMOLOGA_CIA11PETR41         2016-06-20     1              1              
+032_HOMOLOGA_CIA12PETR42         2016-06-20     2              2              
+032_HOMOLOGA_CIA13PETR43         2016-06-20     3              3              
+032_HOMOLOGA_CIA14PETR44         2016-06-20     4              4              

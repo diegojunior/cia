@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xsi:schemaLocation="urn:bvmf.052.01.xsd bvmf.052.01.xsd" xmlns="urn:bvmf.052.01.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BizFileHdr>
+		<Xchg>
+			<BizGrpDesc>
+				<Fr>
+					<OrgId>
+						<Id>
+							<OrgId>
+								<Othr>
+									<Id>BVMF TTT</Id>
+									<Issr>40</Issr>
+									<SchmeNm>
+										<Prtry>39</Prtry>
+									</SchmeNm>
+								</Othr>
+							</OrgId>
+						</Id>
+					</OrgId>
+				</Fr>
+				<To>
+					<OrgId>
+						<Id>
+							<OrgId>
+								<Othr>
+									<Id>3-489</Id>
+									<Issr>40</Issr>
+									<SchmeNm>
+										<Prtry>39</Prtry>
+									</SchmeNm>
+								</Othr>
+							</OrgId>
+						</Id>
+					</OrgId>
+				</To>
+				<BizGrpDtls>
+					<BizGrpIdr>BV123456201304240000000000000815930</BizGrpIdr>
+					<TtlNbOfMsg>1</TtlNbOfMsg>
+					<BizGrpTp>BVBG.018.02</BizGrpTp>
+					<CreDtAndTm>2007-01-02T10:53:55</CreDtAndTm>
+				</BizGrpDtls>
+				<MsgTpDef>
+					<MsgDefIdr>bvmf.041.02</MsgDefIdr>
+					<NbOfMsg>1</NbOfMsg>
+				</MsgTpDef>
+			</BizGrpDesc>
+			<BizGrp>
+				<Document xsi:schemaLocation="urn:bvmf.041.02.xsd bvmf.041.02.xsd" xmlns="urn:bvmf.041.02.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<SttlmRpt>
+						<RptParams>
+							<Frqcy>
+								<xpto>
+									<RptNb name="Diego">11111</RptNb>
+									<ActvtyInd>true</ActvtyInd>
+								</xpto>
+							</Frqcy>
+						</RptParams>
+						<RptParams>
+							<Frqcy>
+								<xpto>
+									<RptNb name="Jaqueline">22222</RptNb>
+									<ActvtyInd>false</ActvtyInd>
+								</xpto>
+							</Frqcy>
+						</RptParams>
+					</SttlmRpt>
+				</Document>
+			</BizGrp>
+		</Xchg>
+	</BizFileHdr>
+</Document>

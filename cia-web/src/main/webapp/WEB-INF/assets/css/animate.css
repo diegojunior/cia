@@ -1,0 +1,8 @@
+@keyframes cia-animation-fadein {
+	from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.cia-animation-fadein {
+	animation: cia-animation-fadein 1s;
+}

@@ -1,0 +1,13 @@
+.limitAddRemoveSingleInput {
+	overflow-y: scroll; 
+	height: 225px;
+}
+
+.divBreakLine {
+	word-break: break-all;
+}
+
+#radioBtn .notActive{
+    color: #3276b1;
+    background-color: #fff;
+}

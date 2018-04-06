@@ -1,0 +1,78 @@
+.navigationAlign {
+   text-align: right;
+   height: 40px;
+}
+
+.columnStyle {
+    vertical-align: middle !important; 
+    white-space: nowrap !important;
+    text-align: center !important;   
+ }
+
+ .col-custom-largura {
+     width: 20%;
+ }
+ 
+ .otherLeftCell {
+    background-color: #ffffff !important; 
+    color:  black !important;
+    vertical-align: middle !important;
+    text-align: left !important;
+}
+
+.otherCell {
+    background-color: #ffffff !important; 
+    color:  black !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.andamentoCell {
+     background-color: #888179 !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+
+.divergenteCell {
+     background-color: #d9534f !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+            
+.concluidoCell {
+     background-color: #5cb85c !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+
+.erroCell {
+     background-color: #888179 !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+
+ .gravadoCell {
+     background-color: #d6b711 !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+
+ .gravadoDivergenciaCell {
+     background-color: #d6b711 !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+
+ .naoExecutadoCell {
+     background-color: #337ab7 !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+ 

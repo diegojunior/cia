@@ -1,0 +1,6 @@
+/.classpath
+/.project
+/.settings/
+/target/
+/bin
+/src/main/webapp/WEB-INF/source/bundle.js

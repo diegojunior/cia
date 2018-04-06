@@ -1,0 +1,9 @@
+.navigationAlign {
+   text-align: right;
+   height: 40px;
+}
+
+.pickListStyle {
+    overflow-y: 'scroll';
+    height: 225px;
+}

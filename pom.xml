@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.totvs.cia</groupId>
+	<artifactId>cia</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>cia</name>
+	<description>Conciliador com Inteligência Automática</description>
+  
+	<modules>
+		<module>cia-core</module>
+		<module>cia-ear</module>
+		<module>cia-report</module>
+		<module>cia-cadastro</module>
+		<module>cia-parametrizacao</module>
+		<module>cia-carga</module>
+		<module>cia-importacao</module>
+		<module>cia-conciliacao</module>
+		<module>cia-gateway</module>
+		<module>cia-web</module>
+  </modules>
+	
+	<organization>
+		<name>Totvs</name>
+		<url>http://www.totvs.com.br</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>renan.rodrigues</id>
+			<name>Renan Moraes Rodrigues</name>
+			<email>renan.rodrigues@totvs.com.br</email>
+			<organization>Totvs</organization>
+			<organizationUrl>http://www.totvs.com.br</organizationUrl>
+			<timezone>-3</timezone>
+		</developer>
+		
+		<developer>
+			<id>diego.junior</id>
+			<name>Diego Junior da Silva Pereira</name>
+			<email>diego.junior@totvs.com.br</email>
+			<organization>Totvs</organization>
+			<organizationUrl>http://www.totvs.com.br</organizationUrl>
+			<timezone>-3</timezone>
+		</developer>
+	</developers>
+	
+	<properties>
+		
+		<cia.version>1.0.0-SNAPSHOT</cia.version>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<version.ear.plugin>2.6</version.ear.plugin>
+		<version.surefire.plugin>2.10</version.surefire.plugin>
+		<version.war.plugin>2.1.1</version.war.plugin>
+
+		<java-version>1.8</java-version>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+
+		<!-- Spring -->
+		<spring.web.mvc>4.3.5.RELEASE</spring.web.mvc>
+		<spring.data.version>1.10.6.RELEASE</spring.data.version>
+		<spring.security.version>4.1.4.RELEASE</spring.security.version>
+		<springframework.version>4.3.5.RELEASE</springframework.version>
+		<spring.batch.version>3.0.7.RELEASE</spring.batch.version>
+
+		<!-- JEE -->
+		<servlet.version>3.0.1</servlet.version>
+		<jsp.version>2.2</jsp.version>
+		<jstl.version>1.2</jstl.version>
+
+		<!-- Hibernate/JPA -->
+		<hibernate.version>5.2.6.Final</hibernate.version>
+		
+		<!-- H2 Database -->
+		<h2.database.version>1.4.196</h2.database.version>
+
+		<!-- Jackson -->
+		<jackson.version>2.5.5</jackson.version>
+		
+		<!-- swagger -->
+		<swagger.version>2.2.2</swagger.version>
+		<fixture.factory>3.1.0</fixture.factory>
+		
+		
+	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- [INICIO] INTERNAS -->
+			
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-carga</artifactId>
+				<version>${cia.version}</version>
+				<type>jar</type>
+			</dependency>
+			
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-importacao</artifactId>
+				<version>${cia.version}</version>
+				<type>jar</type>
+			</dependency>
+			
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-core</artifactId>
+				<version>${cia.version}</version>
+				<type>jar</type>
+			</dependency>
+			
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-conciliacao</artifactId>
+				<version>${cia.version}</version>
+				<type>jar</type>
+			</dependency>
+			
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-cadastro</artifactId>
+				<version>${cia.version}</version>
+				<type>jar</type>
+			</dependency>
+			
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-parametrizacao</artifactId>
+				<version>${cia.version}</version>
+				<type>jar</type>
+			</dependency>
+			
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-report</artifactId>
+				<version>${cia.version}</version>
+				<type>jar</type>
+			</dependency>
+			
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-gateway</artifactId>
+				<version>${cia.version}</version>
+				<type>jar</type>
+			</dependency>
+			
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-web</artifactId>
+				<version>${cia.version}</version>
+				<type>war</type>
+			</dependency>
+			
+			
+			<!-- [FIM] INTERNAS -->
+
+			<!-- [INICIO] DENTRO DA APLICAÇÃO -->
+
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>19.0</version>
+			</dependency>
+			
+			<!-- swagger -->
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+			
+			<!-- jackson -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>net.minidev</groupId>
+			    <artifactId>json-smart</artifactId>
+			    <version>2.2.1</version>
+			</dependency>
+			
+			<!-- configuracao jpa e driver -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+	
+			<!-- commons -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.12.6</version>
+			</dependency>
+			
+			<!-- Test -->
+			<dependency>
+				<groupId>br.com.totvs.cia</groupId>
+				<artifactId>cia-parametrizacao</artifactId>
+				<type>test-jar</type>
+				<version>${cia.version}</version>
+				<scope>test</scope>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${springframework.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.12</version>
+				<scope>test</scope>
+				<exclusions>
+	                <exclusion>
+	                    <groupId>org.hamcrest</groupId>
+	                    <artifactId>hamcrest-core</artifactId>
+	                </exclusion>
+	            </exclusions>
+			</dependency>
+			
+			<dependency>
+			    <groupId>org.hamcrest</groupId>
+			    <artifactId>hamcrest-all</artifactId>
+			    <version>1.3</version>
+			    <scope>test</scope>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>1.9.5</version>
+				<scope>test</scope>
+				<exclusions>
+					<exclusion>
+	                    <groupId>org.hamcrest</groupId>
+	                    <artifactId>hamcrest-core</artifactId>
+	                </exclusion>
+				</exclusions>
+			</dependency>
+			
+			<dependency>
+				<groupId>br.com.six2six</groupId>
+				<artifactId>fixture-factory</artifactId>
+				<version>${fixture.factory}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.jayway.jsonpath</groupId>
+				<artifactId>json-path</artifactId>
+				<version>2.2.0</version>
+				<scope>test</scope>
+			</dependency>
+			
+			<dependency>
+			    <groupId>com.jayway.jsonpath</groupId>
+			    <artifactId>json-path-assert</artifactId>
+			    <version>2.2.0</version>
+			    <scope>test</scope>
+			    <exclusions>
+	                <exclusion>
+	                    <groupId>org.hamcrest</groupId>
+	                    <artifactId>hamcrest-core</artifactId>
+	                </exclusion>
+	            </exclusions>
+			</dependency>
+			
+			<dependency>
+			    <groupId>com.h2database</groupId>
+			    <artifactId>h2</artifactId>
+			    <version>${h2.database.version}</version>
+			    <scope>test</scope>
+			</dependency>
+						
+			
+			<dependency>
+			    <groupId>commons-fileupload</groupId>
+			    <artifactId>commons-fileupload</artifactId>
+			    <version>1.3.1</version>
+			</dependency>
+			
+			<!-- [FIM] DENTRO DA APLICAÇÃO -->
+			
+		</dependencies>
+	</dependencyManagement>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.1</version>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>central</id>
+			<url>https://dev.totvs.amplis.com.br/nexus/content/groups/public/</url>
+		</repository>
+
+		<repository>
+			<id>dependenciesPublic</id>
+			<url>https://dev.totvs.amplis.com.br/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>dependenciesAmplis</id>
+			<url>https://dev.totvs.amplis.com.br/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>pluginPublic</id>
+			<url>https://dev.totvs.amplis.com.br/nexus/content/groups/public/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>pluginAmplis</id>
+			<url>https://dev.totvs.amplis.com.br/nexus/content/groups/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+	
+	<distributionManagement>
+		<!-- Repositórios de publicação do Amplis -->
+		<snapshotRepository>
+			<id>amplisSnapshots</id>
+			<url>https://dev.totvs.amplis.com.br/nexus/content/repositories/amplisSnapshots</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+		<repository>
+			<id>amplisReleases</id>
+			<url>https://dev.totvs.amplis.com.br/nexus/content/repositories/amplisReleases</url>
+			<uniqueVersion>false</uniqueVersion>
+		</repository>
+	</distributionManagement>
+
+  
+</project>

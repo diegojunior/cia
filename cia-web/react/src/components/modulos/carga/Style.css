@@ -1,0 +1,22 @@
+.navigationAlign {
+   text-align: right;
+   height: 40px;
+}
+
+.customAlert {
+    padding: 5px !important;
+    margin-bottom: 5px !important;
+    border-color: #000000 !important;
+}
+
+.customWarningAlert {
+    border-color: #c59a41 !important;
+}
+
+.customSuccessAlert {
+    border-color: #64d802 !important;
+}
+
+.customErrorAlert {
+    border-color: #d8022a !important;
+}

@@ -1,0 +1,71 @@
+.navigationAlign {
+   text-align: right;
+   height: 40px;
+}
+
+.espacoDetalheConciliacao {
+	height: 10px;
+}
+
+.columnStyle {
+    vertical-align: middle !important; 
+    white-space: nowrap !important;
+    text-align: center !important;   
+ }
+ 
+ .chaveCell {
+     background-color: #c3ae09 !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+     width: 20% !important;
+ }
+ 
+ .okCell {
+     background-color: green !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+ 
+ .divergenteCell {
+     background-color: red !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+ 
+ .somenteCargaCell {
+     background-color: #f0914e !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+ 
+ .somenteImportacaoCell {
+     background-color: #4ba5da !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+ 
+ .informativoCell {
+     background-color: #7d7d7d !important; 
+     color: white !important;
+     vertical-align: middle !important;
+     text-align: center !important;
+ }
+
+ .otherCell {
+    background-color: #ffffff !important; 
+    color:  black !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.equivalenciaHeaderColumn {
+    background-color: yellow !important; 
+    color:  black !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+}
